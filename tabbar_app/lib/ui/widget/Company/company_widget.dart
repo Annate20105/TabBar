@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tabbar_app/ui/helper/company_helper.dart';
-import 'package:tabbar_app/ui/widget/Company/Cell/company_cell.dart';
+import 'package:tabbar_app/ui/widget/Company/Item/company_item.dart';
 
 class CompanyWidget extends StatelessWidget {
   @override
@@ -9,13 +9,9 @@ class CompanyWidget extends StatelessWidget {
     return GridView.count(
       crossAxisCount: 2,
       childAspectRatio: 3.0 / 2.0,
-      children: List.generate(CompanyItem.values.length, (index) {
-        return GridTile(
-            child: CompanyCellWidget(CompanyItem.values[index]),
-        );
-    }),
-    );
-  }
+      children:
+      CompanyType.values.map((type) => CompanyItem(type)).toList());
+    }
 }
 
 

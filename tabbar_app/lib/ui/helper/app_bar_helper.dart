@@ -1,0 +1,5 @@
+
+enum AppBarType {
+  title,
+  search
+}
