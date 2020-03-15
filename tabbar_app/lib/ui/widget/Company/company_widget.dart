@@ -10,7 +10,8 @@ class CompanyWidget extends StatelessWidget {
       crossAxisCount: 2,
       childAspectRatio: 3.0 / 2.0,
       children:
-      CompanyType.values.map((type) => CompanyItem(type)).toList());
+      CompanyType.values.map((type) => CompanyItem(type)).toList()
+    );
     }
 }
 

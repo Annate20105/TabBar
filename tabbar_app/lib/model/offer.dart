@@ -1,11 +1,10 @@
-import 'package:tabbar_app/ui/helper/offer_helper.dart';
 
 class Offer {
-
+  final int id;
   final String title;
   final String date;
-  final OfferType type;
+  final String image;
 
-  Offer(this.title, this.date, this.type);
+  Offer(this.id, this.title, this.date, this.image);
 
 }

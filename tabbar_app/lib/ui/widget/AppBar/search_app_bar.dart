@@ -60,7 +60,6 @@ class _SearchAppBarState extends State<SearchAppBar> {
           style: TextStyle(color: Colors.white),
           decoration: InputDecoration(
               hintText: "Здесь может быть ваша реклама",
-              prefixIcon: Icon(Icons.search, color: Colors.white),
               hintStyle: TextStyle(color: Colors.white),
             ),
         );
